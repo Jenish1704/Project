@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./images/Spotify_favicon.png" type="image/x-icon">
+    <script type="text/javascript" src="script.js"></script>
+    <style>
+        /* Additional styles specific to the login page */
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login-container h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .input-group input {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .input-group .fa {
+            color: #999;
+            margin-right: 10px;
+        }
+
+        .login-btn {
+            width: 50%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1db954;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background-color: #18a345;
+        }
+
+        .signup-link {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .signup-link1 {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .signup-link:hover {
+            text-decoration: underline;
+        }
+
+        .signup-link1:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <h1>Log in to Spotify</h1>
+        <form>
+            <div class="input-group">
+                <span class="fa fa-user"></span>
+                <input type="text" placeholder="Username or Email" id="t1">
+            </div>
+            <div class="input-group">
+                <span class="fa fa-lock"></span>
+                <input type="password" placeholder="Password">
+            </div>
+            <button type="submit" class="login-btn" onclick="fun()">Log In</button>
+        </form>
+        <br>
+        <p><a href="#" class="signup-link1">Forgot Password?</a></p>
+        <p>Don't have an account? <a href="signup.html" class="signup-link">Sign up for Spotify</a></p>
+    </div>
+
+</body>
+
+</html>
